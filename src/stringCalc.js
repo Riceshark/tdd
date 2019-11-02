@@ -4,4 +4,5 @@ const calc = (numbers) => {
   return numbers_splited.reduce((accum, cur) => accum + Number(cur), 0)
 }
 
+
 export default calc
