@@ -30,6 +30,10 @@ const calc = (arg) => {
     nums.forEach(function (element) {
         let currentNum = parseInt(element.trim());
 
+        if (currentNum < 0) {
+            throw new Error('negatives not allowed');
+        }
+
         if (!isNaN(currentNum)) {
             result += currentNum;
         }
