@@ -28,7 +28,7 @@ describe('3 tests wave', () => {
 
 describe('4 tests wave', () => {
     it('handles new line', () => {
-        expect(stringCalc('1\n2,3')).toBe(4);
+        expect(stringCalc('1\n2,3')).toBe(6);
     });
 
     it('handles new line', () => {
