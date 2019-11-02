@@ -49,7 +49,7 @@ describe('5 handle castom delimiter like "//[delimiter]\n[numbers...]"', () => {
 describe('6 tests wave', () => {
     it("negatives shall no pass", () => {
         try {
-            stringCalc('2,-1');
+            expect(stringCalc('2,-1')).toBe(false);
         } catch (error) {
             expect(error.message).toBe('negatives not allowed');
         }
