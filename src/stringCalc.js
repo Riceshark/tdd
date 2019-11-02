@@ -1,6 +1,6 @@
 
 const calc = (numbers) => {
-  const numbers_splited = numbers.split(',')
+  const numbers_splited = numbers.split(/[,\n]/)
   return numbers_splited.reduce((accum, cur) => accum + Number(cur), 0)
 }
 
