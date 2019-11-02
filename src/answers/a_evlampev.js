@@ -1,6 +1,4 @@
-
 const calc = (str) => {
-    if (str === '') return 0;
     let delimiter = ',';
     const matches = str.match(/\/\/(.+)\n(.+)/i);
     if (matches) {
@@ -11,7 +9,7 @@ const calc = (str) => {
     if (splitted.some(val => val < 0)) {
         throw new Error("negatives not allowed");
     }
-    return splitted.filter(val => val < 1000).reduce((acc, val) => acc + parseInt(val), 0);
+    return splitted.filter(val => val < 1000).reduce((acc, val) => acc + Number(val), 0);
 };
 
 export default calc
