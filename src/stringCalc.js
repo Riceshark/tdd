@@ -5,9 +5,12 @@ const calc = (str) => {
         let res = 0;
         vars.forEach((v) => {
             if (v !== '') {
-                res += Number(v)
                 if (v < 0) {
                     throw Error('negatives not allowed');
+                } else if (v > 1000) {
+
+                } else {
+                    res += Number(v)
                 }
             }
         });
