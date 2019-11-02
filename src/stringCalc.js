@@ -1,7 +1,7 @@
 
 const calc = (str) => {
     if (typeof str !== 'undefined') {
-        let vars = str.split(',');
+        let vars = str.split(new RegExp('[\\n,]'));
         let res = 0;
         vars.forEach((v) => {
             res += Number(v)
