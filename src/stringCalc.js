@@ -1,3 +1,10 @@
+const parseNumber = (number) => {
+  const num = Number(number);
+  if (num < 0) {
+    throw new Error('negatives not allowed')
+  }
+  return num;
+}
 
 const calc = (input) => {
   let numbers = input;
@@ -8,7 +15,7 @@ const calc = (input) => {
     numbers = input.split('\n', 2)[1];
   }
   const numbers_splited = numbers.split(delimiter);
-  return numbers_splited.reduce((accum, cur) => accum + Number(cur), 0);
+  return numbers_splited.reduce((accum, cur) => accum + parseNumber(cur), 0);
 }
 
 export default calc
