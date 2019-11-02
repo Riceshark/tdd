@@ -4,8 +4,12 @@ const calc = (str) => {
         console.log(vars);
         let res = 0;
         vars.forEach((v) => {
-            if (v !== '')
+            if (v !== '') {
                 res += Number(v)
+                if (v < 0) {
+                    throw Error('negatives not allowed');
+                }
+            }
         });
         return res;
     } else {
