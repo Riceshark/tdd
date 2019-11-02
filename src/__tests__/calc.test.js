@@ -32,6 +32,6 @@ describe('4 tests wave', () => {
     });
 
     it('handles new line', () => {
-        expect(stringCalc('1,2,\n3,1')).toBe(5);
+        expect(stringCalc('1,2\n3,1')).toBe(7);
     });
 })
