@@ -11,7 +11,7 @@ const calc = (str) => {
     if (splitted.some(val => val < 0)) {
         throw new Error("negatives not allowed");
     }
-    return splitted.reduce((acc, val) => acc + parseInt(val), 0);
+    return splitted.filter(val => val < 1000).reduce((acc, val) => acc + parseInt(val), 0);
 };
 
 export default calc
