@@ -16,4 +16,5 @@ const calc = (arg) => {
     return result;
 }
 
+
 export default calc
