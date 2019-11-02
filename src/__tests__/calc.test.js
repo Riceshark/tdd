@@ -45,3 +45,13 @@ describe('5 handle castom delimiter like "//[delimiter]\n[numbers...]"', () => {
         expect(stringCalc('//p\n1p2p4')).toBe(7);
     });
 })
+
+describe('6 tests wave', () => {
+    it("negatives shall no pass", () => {
+        try {
+            stringCalc('2,-1');
+        } catch (error) {
+            expect(error.message).toBe('negatives not allowed');
+        }
+    });
+})
