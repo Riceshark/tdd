@@ -2,6 +2,8 @@ const parseNumber = (number) => {
   const num = Number(number);
   if (num < 0) {
     throw new Error('negatives not allowed')
+  } else if (num > 1000) {
+    return 0
   }
   return num;
 }
