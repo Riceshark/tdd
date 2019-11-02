@@ -1,12 +1,10 @@
 
 const calc = (arg) => {
-    let nums = arg.split(',');
+    let nums = arg.split(/,|\n/) ;
     let result = 0;
 
-    console.log(result);
-
     nums.forEach(function(element) {
-        let currentNum = parseInt(element);
+        let currentNum = parseInt(element.trim());
 
         if (!isNaN(currentNum)) {
             result += currentNum;
