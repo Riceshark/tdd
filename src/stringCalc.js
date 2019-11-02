@@ -34,7 +34,7 @@ const calc = (arg) => {
             throw new Error('negatives not allowed');
         }
 
-        if (!isNaN(currentNum)) {
+        if (!isNaN(currentNum) && currentNum <= 1000) {
             result += currentNum;
         }
     });
