@@ -13,7 +13,9 @@ const calc = (arg) => {
     numbers.forEach(x => {
         if (Number(x) < 0) {
             throw new Error('negatives not allowed');
-        } else sum += Number(x)
+        } else if (Number(x) <= 1000) {
+            sum += Number(x)
+        }
     });
     return sum;
 };
