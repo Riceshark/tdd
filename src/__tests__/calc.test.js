@@ -1,4 +1,4 @@
-import stringCalc from '../stringCalc';
+import stringCalc from '../answers/SabirKhalitov';
 
 describe('first tests wave', () => {
     it('do some simple stuff', () => {
