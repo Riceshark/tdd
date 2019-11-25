@@ -25,16 +25,16 @@ describe('3 tests wave', () => {
         expect(stringCalc('1,2,2,3')).toBe(8);
     });
 })
-//
-// describe('4 tests wave', () => {
-//     it('handles new line', () => {
-//         expect(stringCalc('1\n2,3')).toBe(6);
-//     });
-//
-//     it('handles new line', () => {
-//         expect(stringCalc('1,2\n3,1')).toBe(7);
-//     });
-// })
+
+describe('4 tests wave', () => {
+    it('handles new line', () => {
+        expect(stringCalc('1\n2,3')).toBe(6);
+    });
+
+    it('handles new line', () => {
+        expect(stringCalc('1,2\n3,1')).toBe(7);
+    });
+})
 
 // describe('5 handle castom delimiter like "//[delimiter]\n[numbers...]"', () => {
 //     it('handle ; as delimeter', () => {
@@ -45,7 +45,7 @@ describe('3 tests wave', () => {
 //         expect(stringCalc('//p\n1p2p4')).toBe(7);
 //     });
 // })
-//
+
 // describe('6 tests wave', () => {
 //     it("negatives shall no pass", () => {
 //         try {

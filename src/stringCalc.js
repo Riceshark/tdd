@@ -1,9 +1,11 @@
 const calc = (input) => {
+    input = input.toString();
+    input = input.replace('\n', ',');
     const values = input.split(',');
-    console.log(values);
     let result = 0;
 
     values.forEach((item) =>{
+        
         result += parseInt(item);
 
     });
