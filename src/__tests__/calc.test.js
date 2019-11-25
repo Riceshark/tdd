@@ -46,23 +46,23 @@ describe('5 handle castom delimiter like "//[delimiter]\n[numbers...]"', () => {
     });
 })
 
-// describe('6 tests wave', () => {
-//     it("negatives shall no pass", () => {
-//         try {
-//             expect(stringCalc('2,-1')).toBe(false);
-//         } catch (error) {
-//             expect(error.message).toBe('negatives not allowed');
-//         }
-//     });
-//
-//     it("negatives shall no pass", () => {
-//         try {
-//             expect(stringCalc('2,-1')).toBe(true);
-//         } catch (error) {
-//             expect(error.message).toBe('negatives not allowed');
-//         }
-//     });
-// })
+describe('6 tests wave', () => {
+    it("negatives shall no pass", () => {
+        try {
+            expect(stringCalc('2,-1')).toBe(false);
+        } catch (error) {
+            expect(error.message).toBe('negatives not allowed');
+        }
+    });
+
+    it("negatives shall no pass", () => {
+        try {
+            expect(stringCalc('2,-1')).toBe(true);
+        } catch (error) {
+            expect(error.message).toBe('negatives not allowed');
+        }
+    });
+})
 //
 // describe('7 tests wave', () => {
 //     /**

@@ -5,7 +5,11 @@ const calc = (input) => {
 
     let match = regex.exec(input);
     while (match) {
-        result += parseInt(match[0]);
+        let number = parseInt(match[0]);
+        if (number < 0){
+            throw new Error("negatives not allowed");
+        }
+        result += number;
         match = regex.exec(input)
     }
     if (input === '' || undefined) {
