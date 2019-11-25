@@ -63,17 +63,17 @@ describe('6 tests wave', () => {
         }
     });
 })
-//
-// describe('7 tests wave', () => {
-//     /**
-//      * Numbers bigger than 1000 should be ignored, so adding 2 + 1001 = 2
-//      */
-//
-//     it("ignore big numbers", () => {
-//         expect(stringCalc('2,1001')).toBe(2);
-//     });
-//
-//     it("ignore big numbers", () => {
-//         expect(stringCalc('3,1001,4')).toBe(7);
-//     });
-// })
+
+describe('7 tests wave', () => {
+    /**
+     * Numbers bigger than 1000 should be ignored, so adding 2 + 1001 = 2
+     */
+
+    it("ignore big numbers", () => {
+        expect(stringCalc('2,1001')).toBe(2);
+    });
+
+    it("ignore big numbers", () => {
+        expect(stringCalc('3,1001,4')).toBe(7);
+    });
+})
